@@ -7,18 +7,23 @@
 </head>
 <body>
     <header>
-
-    <h1>Simple Exchanger</h1>
+        <h1>Simple Exchanger</h1>
     </header>
     <div class="container">
         <p class="menu">
-                <a href="./">Inicio</a> | <a href="/adios">Segunda página</a>
+            <a href="./">Inicio</a> | <a href="/nuevacompra">Compra</a>
         </p>
-            {% block body %}{% endblock %}
+        {% block body %}{% endblock%}
+    </div>
+    <div class="mensajes-error">
+            {% if error %}
+                <ul class="flash-messages">
+                    <li>{{ error }}</li>    
+                </ul>
+            {% endif %}
     </div>
     <footer>
-        <p>Criptoblock &copy; 2019</p>
+        <p>Criptobook &copy; 2019</p>
     </footer>
-    
 </body>
 </html>
