@@ -1,0 +1,15 @@
+.header {
+    background-color: #33C3F0;
+    color: white;
+    padding-top: 16px;
+}
+
+.field-error {
+    color: red;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: -8px;
+}
+.miboton {
+    margin-left: 8px;
+}
